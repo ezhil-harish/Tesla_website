@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.first{
+	height: 100vh;
+	width: 100%;
+	background-image: url('model3.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	top: 0;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	z-index: 100;
+	top: 0;
+}
+.logo h2{
+	line-height: 60px;
+	margin-left: 50px;
+	font-size: 28px;
+}
+.mid{
+	display: flex;
+	line-height: 60px;
+	margin-left: 30px;
+}
+.mid ul{
+	list-style: none;
+	display: flex;
+}
+.mid li{
+	line-height: 20px;
+	padding-right: 30px;
+}
+.mid a{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.f-content{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.line{
+	opacity: 0;
+}
+.con{
+	height: 300px;
+	width: 300px;
+	margin-bottom: 90px;
+}
+.con h1,a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	color: #000;
+}
+.sec{
+	margin-top: 40px;
+}
+.one{
+	background-color: #696969;
+	color: #fff;
+}
+.two{
+	color: #696969;
+}
+.second{
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url('modely.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.third{
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url('solar.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+@media(max-width: 1100px){
+	.mid ul{
+		position: fixed;
+		right: -100%;
+		display: block;
+		top: 50px;
+		width: 50%;
+		height: 100%;
+		background-color: #dcdcdc;
+		transition: 1s;
+	}
+	.first{
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+	}
+	.mid ul.slide{
+		right: 0;
+		transition: 1s;
+	}
+	.line{
+		float: right;
+		opacity: 1;
+		cursor: pointer;
+	}
+	.line .t-line{
+		height: 5px;
+		width: 35px;
+		background-color: #000;
+		display: block;
+		margin-top: 10px;
+		margin-right: 5px;
+	}
+}
